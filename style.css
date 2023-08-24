@@ -1,0 +1,284 @@
+body {
+    background-color: #FFFE9A;
+}
+
+.flex-container {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+}
+
+.foto>img {
+    border-radius: 50%;
+    width: 220px;
+    transition-duration: 0.4s;
+}
+
+.icon-container {
+    padding-top: 30px;
+    padding-left: 90px;
+}
+
+.icon {
+    height: 40px;
+}
+
+.linkedin-container {
+    padding-top: 30px;
+    padding-left: 90px;
+}
+
+
+.x{
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 0.7fr 0.5fr 1fr;
+    grid-template-columns: 1.1fr 1.5fr 1.5fr;
+    margin-left: 12.2%;
+    margin-right: 12.2%;
+    margin-top: 56px;
+}
+
+.title {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    font-family: ADLaM Display;
+}
+
+.title>h1 {
+    font-size: 40px;
+}
+
+.education {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+.skills {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin-top: 20px;
+}
+
+.lang {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: 20px;
+    padding-top: 30px;
+    margin-right: 50px;
+}
+
+
+.hobbies {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    margin-top: 20px;
+    padding-top: 30px;
+
+}
+
+.footer {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin-top: 20px;
+}
+
+.education>h2 {
+    font-family: Ysabeau Infant;
+    font-weight: bold;
+
+}
+
+h2 {
+    font-family: Ysabeau Infant;
+    font-weight: bold;
+
+}
+
+hr {
+    border: none;
+    border-top: 0.07rem solid black;
+    border-bottom: 0.3rem solid black;
+    height: 0.6rem;
+}
+
+.lang-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 9fr 1fr;
+    row-gap: 20px;
+}
+
+.lang-grid>div {
+    font-family: Raleway;
+    font-weight: 700;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 14fr;
+    row-gap: 20px;
+}
+
+.skills-grid>.grid-item {
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+    font-weight: 700;
+}
+
+p {
+    font-family: Raleway;
+    font-weight: 700;
+}
+
+
+#thin {
+    border: none;
+    border-top: 0.07rem solid black;
+}
+
+/* ... Existing CSS rules ... */
+
+.icon-container {
+    padding-top: 30px;
+    padding-left: 90px;
+    cursor: pointer;
+}
+
+.icon {
+    height: 40px;
+    filter: invert(0%);
+    /* Initially set the icons to their original color */
+}
+
+.icon-container:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.icon-container:hover .icon {
+    filter: invert(50%);
+    /* Invert the color of the icons on hover */
+    transition: filter 0.3s ease;
+}
+
+
+
+.foto>img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+
+
+@media (max-width: 1200px) {
+    .flex-container {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+    }
+
+    
+    .title {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .title>h1 {
+        font-size: 35px;
+    }
+
+    .education {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        margin-top: 20px;
+        margin-right: 50px;
+    }
+
+    .skills {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        margin-top: 20px;
+    }
+
+    .lang {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        margin-top: 20px;
+        padding-top: 30px;
+        margin-right: 50px;
+    }
+
+    .hobbies {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        margin-top: 20px;
+        padding-top: 30px;
+
+    }
+
+    .foto>img {
+        width: 170px;
+    }
+
+
+    .footer {
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        margin-top: 20px;
+    }
+
+}
+
+@media (max-width: 1200px) and (min-width: 520px){
+    .x{
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 520px) {
+    .x{
+        flex-direction: column;
+    }
+
+}
